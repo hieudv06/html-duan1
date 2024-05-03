@@ -1,0 +1,24 @@
+.box{
+    counter-reset: section;
+    padding-left: 30px;
+    background-color: aqua;
+}
+h2{
+    /*Tăng biến đếm lên 1*/
+    counter-increment: section;
+    /*Tạo biến đếm, và rs biến đếm thẻ h3 về 0*/
+    counter-reset: sub-section;
+}
+/*Đánh số cho các thẻ, thêm giá trị cho các thẻ section*/
+h2::before {
+    content: "Phần " counter(section) ": ";
+}
+
+h3{
+    /*Đánh số cho thẻ*/
+    counter-increment: sub-section;
+}
+h3::before{
+    content: counter(section) "." counter(sub-section) " ";
+    color : blue;
+}

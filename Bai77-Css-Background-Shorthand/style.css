@@ -1,0 +1,20 @@
+.box{
+    /* background : bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg- */
+    width: 200px;
+    height: 200px;
+    border:50px dotted red;
+    padding:50px;
+    background-color: cyan;
+    background-image:url(); /* đặt hình nào ở trước hiển thị trước */
+    /* background-clip */
+    /* Ảnh đổ từ border hất vào trong mặc định */
+    background-clip:border-box;
+    /* Ảnh đổ từ padding hất vào trong */
+    background-clip: padding-box;
+    /* ảnh đổ phần content */
+    background-clip: content-box; 
+    /* background-attachment: mặc định ảnh bị cuốn theo thanh cuộn */
+    background-attachment:scroll;
+    /* background-attachment : fixed ảnh cố định khi kéo scroll */
+    background-attachment: fixed;
+}

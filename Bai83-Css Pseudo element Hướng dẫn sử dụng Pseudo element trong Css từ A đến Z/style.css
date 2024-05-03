@@ -1,0 +1,37 @@
+p::first-line{
+    color: red;
+}
+
+span{
+    display: inline-block;
+}
+/*Vì thẻ span mặc định là thẻ inline nên ta phải có thêm thuộc tính là inline-block or block */
+span::first-line{
+    color: blue;
+    background-color: yellow;
+}
+p::first-letter{
+    /*Tác động vào các thẻ p */
+    font-size: 40px;
+    color: blue;
+}
+/*Vùng phần tử đang được bôi đen */
+::selection{
+    background-color:  brown;
+    color: fff;
+}
+li::marker{
+    font-size: 40px;
+    color: red;
+}
+.box::before{
+    content: "Em ở đằng trước nè";
+}
+.box::after{
+    display: inline-block;
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: blue 999px;
+    border-radius: 999px;
+}
